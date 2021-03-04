@@ -123,6 +123,13 @@ TxtType.prototype.tick = function () {
 };
 
 window.onload = function () {
+  setTimeout(function(){
+    textTyping();
+  }, 2000);
+  
+};
+
+function textTyping() {
   var elements = document.getElementsByClassName("typewrite");
   for (var i = 0; i < elements.length; i++) {
     var toRotate = elements[i].getAttribute("data-type");
@@ -136,4 +143,7 @@ window.onload = function () {
   css.type = "text/css";
   css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
   document.body.appendChild(css);
-};
+}
+
+
+
