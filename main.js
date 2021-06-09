@@ -123,10 +123,9 @@ TxtType.prototype.tick = function () {
 };
 
 window.onload = function () {
-  setTimeout(function(){
+  setTimeout(function () {
     textTyping();
   }, 2000);
-  
 };
 
 function textTyping() {
@@ -144,6 +143,3 @@ function textTyping() {
   css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
   document.body.appendChild(css);
 }
-
-
-
